@@ -62,7 +62,10 @@ int main() {
 
 void *get_last_element(ArrayType type, void *input_array, int arr_length) {
   switch (type) {
-
+    /* 
+     ; is necessary between case label and declaration
+     Otherwise compiler gives "label can only be part of a statement" error
+    */
     case INT_ARRAY:
       ;
       int *int_array = (int *)input_array;
