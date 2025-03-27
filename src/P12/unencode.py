@@ -1,10 +1,10 @@
-from typing import Any
+type Parameter = str | float | int
 
 def main():
     encoded = [[4, 'a'], 'b', [2, 'c'], [2, 'a'], 'd', [4, 'e']]
     print(unencode(encoded))
 
-def unencode(input_list: list[Any]) -> list[Any]:
+def unencode(input_list: list[Parameter]) -> list[Parameter]:
     unencoded = []
     for item in input_list:
         if isinstance(item, list):

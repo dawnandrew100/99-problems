@@ -1,11 +1,11 @@
-from typing import Any
+type Parameter = str | float | int
 
 
 def main():
     nested = ['a', ['b', ['c', 'd'], 'e']]
     print(flatten(nested))
 
-def flatten(input_list: list[Any]) -> list[Any]:
+def flatten(input_list: list[Parameter]) -> list[Parameter]:
     flattened = []
 
     for item in input_list:

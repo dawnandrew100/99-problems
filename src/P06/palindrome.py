@@ -1,4 +1,4 @@
-from typing import Any
+type Parameter = str | float | int
 
 def main():
     palindrome = ['x', 'a', 'm', 'a', 'x']
@@ -12,7 +12,7 @@ def main():
     print(find_palindrome(num_palindrome))
     #True
 
-def find_palindrome(test: list[Any]) -> bool:
+def find_palindrome(test: list[Parameter]) -> bool:
     for i in range(len(test)//2):
         if test[i] != test[-i -1]:
             return False

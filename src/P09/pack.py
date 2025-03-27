@@ -1,10 +1,10 @@
-from typing import Any
+type Parameter = str | float | int
 
 def main():
     not_packed = ['a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e']
     print(pack(not_packed))
 
-def pack(input_list: list[Any]) -> list[Any]:
+def pack(input_list: list[Parameter]) -> list[Parameter]:
     packed = []
     temp = []
     prev_item = input_list[0]

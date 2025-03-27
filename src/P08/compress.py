@@ -1,10 +1,10 @@
-from typing import Any
+type Parameter = str | float | int
 
 def main():
     not_compressed = ['a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e']
     print(compress(not_compressed))
 
-def compress(input_list: list[Any]) -> list[Any]:
+def compress(input_list: list[Parameter]) -> list[Parameter]:
     compressed = []
     prev_item = ''
 

@@ -1,10 +1,10 @@
-from typing import Any
+type Parameter = str | float | int
 
 def main():
     my_list = ['a','b','c','d']
     print(pick_list_element(my_list, 0))
 
-def pick_list_element(elements: list[Any], list_index: int) -> Any:
+def pick_list_element(elements: list[Parameter], list_index: int) -> Parameter:
     if list_index > len(elements) or not isinstance(elements, list):
         return None
     return elements[list_index]

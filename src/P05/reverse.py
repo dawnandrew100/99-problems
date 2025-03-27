@@ -1,10 +1,10 @@
-from typing import Any
+type Parameter = str | float | int
 
 def main():
     my_list = ['a', 'b', 'c', 'd']
     print(reverse(my_list))
 
-def reverse(elements: list[Any]) -> Any:
+def reverse(elements: list[Parameter]) -> Parameter:
     if not isinstance(elements, list):
         return None
     return elements[::-1]
