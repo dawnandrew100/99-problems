@@ -4,7 +4,7 @@ def main():
     my_list = ['a', 'b', 'c', 'd']
     print(reverse(my_list))
 
-def reverse(elements: list[Parameter]) -> Parameter:
+def reverse(elements: list[Parameter]) -> Parameter | None:
     if not isinstance(elements, list):
         return None
     return elements[::-1]

@@ -4,7 +4,7 @@ def main():
     my_list = ['a','b','c','d']
     print(penultimate(my_list))
 
-def penultimate(elements: list[Parameter]) -> Parameter:
+def penultimate(elements: list[Parameter]) -> Parameter | None:
     if len(elements) < 2 or not isinstance(elements, list):
         return None
     return elements[-2]

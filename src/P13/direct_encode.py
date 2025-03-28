@@ -4,7 +4,7 @@ def main():
     unencoded = ['a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e']
     print(direct_encode(unencoded))
 
-def direct_encode(input_list: list[Parameter]) -> list[list[Parameter]]:
+def direct_encode(input_list: list[Parameter]) -> list[list[Parameter]] | None:
     if not isinstance(input_list, list):
         return None
 

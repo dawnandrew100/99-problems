@@ -11,7 +11,6 @@ def unencode(input_list: list[Parameter]) -> list[Parameter]:
             unencoded.extend([item[1]]*item[0])
             continue
         unencoded.append(item)
-
     return unencoded
 
 if __name__ == "__main__":

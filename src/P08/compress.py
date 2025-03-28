@@ -7,7 +7,6 @@ def main():
 def compress(input_list: list[Parameter]) -> list[Parameter]:
     compressed = []
     prev_item = ''
-
     for item in input_list:
         if item != prev_item:
             compressed.append(item)
