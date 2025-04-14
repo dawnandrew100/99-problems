@@ -4,10 +4,11 @@ type Parameters = str | float | int
 
 def main():
     options = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
-    print(random_select(options, 3))
-    print(random_select(options, 3)) #two prints to show that selections are random
+    print(random_perm(options))
+    print(random_perm(options)) #two prints to show that selections are random
 
-def random_select(input_list: list[Parameters], number_selected: int) -> list[Parameters]:
+def random_perm(input_list: list[Parameters]) -> list[Parameters]:
+    number_selected = len(input_list)
     if not isinstance(input_list, list) or number_selected > len(input_list):
         return None
     temp = input_list[:]
