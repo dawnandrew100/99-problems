@@ -3,6 +3,10 @@ This problem set was taken from https://www.ic.unicamp.br/~meidanis/courses/mc33
 
 ---------------
 
+Resources for problems 87, 88, 96, and 99 can be found in the `resources/` folder of the main repository
+
+---------------
+
 # P-99: Ninety-Nine Prolog Problems
 
 The purpose of this problem collection is to give you the opportunity to practice your skills in logic programming. 
@@ -1139,8 +1143,8 @@ The particular crossword puzzle is specified in a text file which first lists th
 Then, after an empty line, the crossword framework is defined. 
 In this framework specification, an empty character location is represented by a dot (.). 
 In order to make the solution easier, character locations can also contain predefined character values. 
-The puzzle opposite is defined in the file p99a.dat, other examples are p99b.dat and p99d.dat.
-There is also an example of a puzzle (p99c.dat) which does not have a solution.
+The puzzle opposite is defined in the file p99a.txt, other examples are p99b.txt and p99d.txt.
+There is also an example of a puzzle (p99c.txt) which does not have a solution.
 
 Words are strings (character lists) of at least two characters. 
 A horizontal or vertical sequence of character places in the crossword puzzle framework is called a site. 
